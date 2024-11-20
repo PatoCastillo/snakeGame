@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Snake</h1>
+        <div id="menu">
+            <form id="start-form">
+                <label for="player-name">Nombre del Jugador:</label>
+                <input type="text" id="player-name" required>
+                <label for="difficulty">Seleccionar Dificultad:</label>
+                <select id="difficulty" required>
+                    <option value="easy">Fácil</option>
+                    <option value="medium">Medio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+                <button type="submit">Iniciar Juego</button>
+            </form>
+        </div>
+
+        <div id="game" style="display: none;">
+            <canvas id="game-board" width="600" height="400"></canvas>
+            <div id="score-panel">
+                <p>Puntaje: <span id="score">0</span></p>
+                <p>Puntaje Máximo: <span id="high-score">0</span></p>
+                <button id="restart-button">Nueva Partida</button>
+                <button id="view-scores">Ver Puntajes</button>
+                <button id="main-menu-button">Menú Principal</button>
+            </div>
+        </div>
+        <div id="score-board" style="display: none;">
+            <h2>Puntajes</h2>
+            <ul id="score-list"></ul>
+            <button id="clear-scores-button">Borrar Puntajes</button>
+            <button id="back-button">Regresar</button>
+        </div>
+    </div>
+    <audio id="beep" src="audio/bee1.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
