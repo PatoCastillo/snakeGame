@@ -100,7 +100,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function endGame() {
         clearInterval(gameInterval);
-        alert(`¡Juego terminado! Puntaje: ${score}`);
+    // Reproduce el sonido de "Game Over"
+    const gameOverSound = document.getElementById("game-over-sound");
+    gameOverSound.currentTime = 0; // Reinicia el sonido por si ya se había reproducido
+    gameOverSound.play();
+
+    // Dibuja "Game Over" en el canvas
+    ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "white";
+    ctx.font = "50px Arial";
+    ctx.textAlign = "center";
+    ctx.fillText("Game Over", canvas.width / 2, canvas.height / 2);
+
+    ctx.font = "20px Arial";
+    ctx.fillText("Presiona 'Nueva Partida' para intentarlo de nuevo", canvas.width / 2, canvas.height / 2 + 50);
         saveScore();
     }
 
