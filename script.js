@@ -195,3 +195,19 @@ document.addEventListener("DOMContentLoaded", () => {
         game.style.display = "block";
     });
 });
+
+/*let showGameOver = true;
+let gameOverInterval = setInterval(() => {
+    if (showGameOver) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpia el canvas
+        ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "white";
+        ctx.font = "50px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("Game Over", canvas.width / 2, canvas.height / 2);
+    }
+    showGameOver = !showGameOver; // Alterna entre mostrar y ocultar el texto
+}, 500); // Cambia cada 500ms
+*/
+
