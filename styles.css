@@ -1,68 +1,78 @@
+/* Estilo global para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente estándar para un diseño limpio */
+    text-align: center; /* Centra el texto por defecto */
+    background-color: #f4f4f9; /* Color de fondo claro */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina los espacios por defecto */
 }
 
+/* Contenedor principal del juego */
 #game-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #333;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #333; /* Borde oscuro alrededor del contenedor */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
 }
 
+/* Estilo del canvas donde se renderiza el juego */
 canvas {
-    border: 2px solid #000;
-    background-image: url('img/fondo1.jpg'); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el canvas */
-    background-position: center; /* Centra la imagen */
-    border-radius: 5px;
+    border: 2px solid #000; /* Borde negro alrededor del canvas */
+    background-image: url('img/fondo1.jpg'); /* Imagen de fondo del canvas */
+    background-size: cover; /* Asegura que la imagen cubra todo el canvas */
+    background-position: center; /* Centra la imagen de fondo */
+    border-radius: 5px; /* Esquinas ligeramente redondeadas */
 }
 
+/* Estilo general para secciones como menú, panel de puntuación y tabla de puntuaciones */
 #menu, #score-panel, #score-board {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaciado superior entre estas secciones */
 }
 
+/* Estilos para elementos del formulario como etiquetas, selectores, entradas y botones */
 form label, form select, form input, form button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 1rem;
+    display: block; /* Los hace ocupar toda la línea */
+    margin: 10px auto; /* Centra horizontalmente con espaciado */
+    padding: 10px; /* Espaciado interno uniforme */
+    font-size: 1rem; /* Tamaño estándar de fuente */
 }
 
+/* Estilo base para los botones */
 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Elimina los bordes por defecto */
+    padding: 10px 20px; /* Espaciado interno horizontal y vertical */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño estándar de fuente */
+    border-radius: 5px; /* Esquinas redondeadas */
 }
 
+/* Efecto al pasar el ratón sobre los botones */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Cambia a un verde más oscuro */
 }
 
+/* Estilo de la lista en la tabla de puntuaciones */
 #score-board ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Elimina los puntos o números de la lista */
+    padding: 0; /* Elimina el espacio interno del contenedor */
 }
 
+/* Estilo para cada elemento de la lista de puntuaciones */
 #score-board li {
-    padding: 5px;
-    font-size: 1rem;
+    padding: 5px; /* Espaciado interno uniforme */
+    font-size: 1rem; /* Tamaño estándar de fuente */
 }
 
+/* Estilo para los segmentos de la serpiente */
 .snake-segment {
-    width: 20px;
-    height: 20px;
-    background-color: green;
+    width: 20px; /* Ancho de cada segmento */
+    height: 20px; /* Altura de cada segmento */
+    background-color: green; /* Color verde para los segmentos */
     border-radius: 50%; /* Hace que los segmentos sean círculos */
-    position: absolute;
+    position: absolute; /* Posicionamiento absoluto para que se ubiquen en el canvas */
 }
